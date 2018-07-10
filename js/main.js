@@ -1,5 +1,5 @@
-import zeroElement from './intro';
+import {moduleOneElement} from './intro';
 import {drawBlock} from './drawBlock';
 
-drawBlock(zeroElement);
+drawBlock(moduleOneElement);
 

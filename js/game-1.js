@@ -1,8 +1,10 @@
-import { getElementFromTemplate } from './util';
+import util from './util';
 import {drawBlock} from "./drawBlock";
 import gameTwo from './game-2';
+import moduleTwoElement from "./rules";
+import {getBackToFirstScreen} from "./reset";
 
-const moduleThreeElement = getElementFromTemplate(document.querySelector(`#game-1`).innerHTML).cloneNode(true);
+const moduleThreeElement = util.getElementFromTemplate(document.querySelector(`#game-1`).innerHTML).cloneNode(true);
 
 const form = moduleThreeElement.querySelector(`.game__content`);
 
@@ -14,5 +16,7 @@ form.addEventListener('change', () => {
         drawBlock(gameTwo);
     }
 });
+
+getBackToFirstScreen(moduleThreeElement);
 
 export default moduleThreeElement

@@ -1,6 +1,8 @@
-export const getElementFromTemplate = (html) => {
-    const t = document.createElement(`template`);
-    t.innerHTML = html;
-    return t.content.cloneNode(true);
-};
+export default {
+    getElementFromTemplate:(html) => {
+        const t = document.createElement(`div`);
+        t.innerHTML = html;
+        return t
+    },
+}
 

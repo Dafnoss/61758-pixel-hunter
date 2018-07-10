@@ -1,5 +1,9 @@
-import { getElementFromTemplate } from './util';
+import util from './util';
+import moduleFourElement from "./game-2";
+import {getBackToFirstScreen} from "./reset";
 
-const moduleSixElement = getElementFromTemplate(document.querySelector(`#stats`).innerHTML);
+const moduleSixElement = util.getElementFromTemplate(document.querySelector(`#stats`).innerHTML);
+
+getBackToFirstScreen(moduleSixElement);
 
 export default moduleSixElement
