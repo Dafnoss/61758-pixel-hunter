@@ -1,4 +1,4 @@
-import {moduleOneElement} from "./intro";
+import moduleOneElement from "./firstScreen";
 import {drawBlock} from "./drawBlock";
 
 export const getBackToFirstScreen = (object) => {

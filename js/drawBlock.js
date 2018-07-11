@@ -5,7 +5,5 @@ export const drawBlock = (domNode) => {
         main.removeChild(main.firstChild);
     }
 
-    const node = document.createElement(`div`);
-    node.appendChild(domNode);
-    main.appendChild(node);
+    main.appendChild(domNode);
 };
