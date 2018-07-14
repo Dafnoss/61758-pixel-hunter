@@ -1,5 +1,5 @@
-import moduleOneElement from './intro'
-import {drawBlock} from './drawBlock';
+import firstScreen from './screens/screenOne';
+import util from './utils/util';
+import imageloader from './image-loader/image-loader';
 
-
-drawBlock(moduleOneElement);
+util.drawNode(firstScreen);
